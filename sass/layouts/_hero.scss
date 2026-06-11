@@ -1,0 +1,81 @@
+.fa-hero {
+    background: var(--color-background);
+    padding: var(--spacing-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+
+    .fa-container {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-lg);
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .fa-hero__content {
+        flex: 1;
+    }
+
+    .fa-hero__headline {
+        color: var(--color-text);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .fa-hero__subheadline {
+        color: var(--color-text-light);
+        font-size: 1.1rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .fa-btn {
+        margin-bottom: var(--spacing-md);
+
+        @media (max-width: 768px) {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .fa-hero__trust-badges {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        flex-wrap: wrap;
+        margin-top: var(--spacing-sm);
+    }
+
+    .fa-trust-label {
+        font-size: 0.8rem;
+        color: var(--color-text-light);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .fa-trust-badge {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--color-text-light);
+        padding: 0.25rem 0.75rem;
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        background: var(--color-background-light);
+    }
+
+    .fa-hero__image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        img {
+            max-width: 560px;
+            width: 100%;
+        }
+    }
+}

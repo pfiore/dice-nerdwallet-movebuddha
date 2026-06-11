@@ -1,0 +1,12 @@
+{
+  "name": "dice-nerdwallet",
+  "version": "1.0.0",
+  "description": "NerdWallet-inspired child theme for dice",
+  "scripts": {
+    "watch": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "compile:css": "node-sass sass/ -o ./"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

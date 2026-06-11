@@ -1,0 +1,33 @@
+/*!
+Theme Name: dice-nerdwallet
+Theme URI: https://wp.gilfo1.com
+Author: Pat Fiorentino
+Author URI: https://patfiorentino.com
+Description: A NerdWallet-inspired child theme for the dice parent theme.
+Template: dice
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: dice-nerdwallet
+*/
+
+// Abstracts
+@use 'abstracts/variables' as *;
+
+// Base
+@use 'base/reset';
+@use 'base/typography';
+
+
+// Layouts
+@use 'layouts/hero';
+@use 'layouts/table';
+@use 'layouts/trust';
+@use 'layouts/faq';
+@use 'layouts/conversion';
+@use 'layouts/header';
+@use 'layouts/footer';
+@use 'layouts/dice';
+
+// Components
+@use 'components/buttons';
+@use 'components/forms';

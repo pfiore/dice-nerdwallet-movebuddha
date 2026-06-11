@@ -1,0 +1,106 @@
+.fa-table-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-background-light);
+
+    h2 {
+        margin-bottom: var(--spacing-md);
+        color: var(--color-text);
+    }
+
+    .fa-table-wrap {
+        overflow-x: auto;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--color-border);
+    }
+
+    .fa-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--color-background);
+        font-size: 0.95rem;
+
+        thead {
+            background: var(--color-primary);
+            color: #ffffff;
+
+            th {
+                padding: var(--spacing-sm) var(--spacing-md);
+                text-align: left;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid var(--color-border);
+                transition: background 0.15s ease;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    background: var(--color-accent);
+                }
+            }
+
+            td {
+                padding: var(--spacing-sm) var(--spacing-md);
+                vertical-align: middle;
+                // white-space: nowrap;
+                font-size: 0.875rem;
+
+                &:first-child {
+                    white-space: nowrap;
+                }
+
+                &:nth-child(2) {
+                    white-space: nowrap;
+                }
+                &:last-child {
+                    .fa-btn {
+                        font-size: 0.75rem;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        .fa-rating {
+            color: #f4b400;
+            font-weight: 600;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .fa-table thead {
+            display: none;
+        }
+
+        .fa-table tbody tr {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+        }
+
+        .fa-table tbody td {
+            display: flex;
+            justify-content: space-between;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-bottom: 1px solid var(--color-border);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &::before {
+                content: attr(data-label);
+                font-weight: 700;
+                color: var(--color-text-light);
+                margin-right: var(--spacing-sm);
+            }
+        }
+    }
+}
