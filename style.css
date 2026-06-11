@@ -66,6 +66,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a:visited {
+  color: var(--color-primary-dark);
+}
 
 .fa-container {
   max-width: var(--max-width);
