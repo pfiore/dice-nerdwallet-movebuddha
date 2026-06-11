@@ -18,7 +18,7 @@
             ?>
         </nav>
         <p class="fa-footer__disclaimer">
-            <?php echo esc_html( get_option( 'blogdescription' ) ); ?>
+            Disclaimer: moveBuddha is not a financial advisor. This page is for informational purposes only. Consult a licensed fiduciary before making financial decisions.
         </p>
     </div>
 </footer>
