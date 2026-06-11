@@ -285,22 +285,5 @@ $disclaimer       = get_post_meta( get_the_ID(), 'disclaimer', true );
 
 </main>
 
-<footer class="fa-footer">
-    <div class="fa-container">
-        <nav class="fa-footer__links" aria-label="Footer Navigation">
-            <?php
-            wp_nav_menu([
-                'theme_location' => 'footer',
-                'container'      => false,
-                'fallback_cb'    => false,
-            ]);
-            ?>
-        </nav>
-        <p class="fa-footer__disclaimer">
-            <?php echo esc_html( $disclaimer ); ?>
-        </p>
-    </div>
-</footer>
-
 <?php
 get_footer();
