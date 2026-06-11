@@ -1,6 +1,8 @@
 .site-header {
     background: #ffffff;
     box-shadow: var(--shadow-sm);
+    border-bottom: 1px solid #e8e8e8;
+
 
     .site-header__inner {
         position: relative;
@@ -109,12 +111,17 @@
     }
 
     .site-header__actions {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
         flex-shrink: 0;
-
         .fa-btn {
-            border-radius: 0;
             text-transform: uppercase;
-            font-weight: 600;
+        }
+        .fa-btn--icon {
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
 
@@ -162,4 +169,6 @@
             }
         }
     }
+
+    
 }
