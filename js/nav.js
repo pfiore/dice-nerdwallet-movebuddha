@@ -12,11 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
         nav.classList.toggle('is-open');
         if (navContainer) navContainer.classList.toggle('is-open');
 
-        // Lock/unlock body scroll
-        if (navContainer.classList.contains('is-open')) {
-            document.body.style.overflow = 'hidden';
-        } else {
+        if (document.body.style.overflow === 'hidden') {
             document.body.style.overflow = '';
+        } else {
+            document.body.style.overflow = 'hidden';
         }
     });
 });
