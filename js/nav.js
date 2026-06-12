@@ -11,5 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.toggle('is-active');
         nav.classList.toggle('is-open');
         if (navContainer) navContainer.classList.toggle('is-open');
+
+        // Lock/unlock body scroll
+        if (navContainer.classList.contains('is-open')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
     });
 });
